@@ -211,8 +211,8 @@ int prop_modif(const char* folder_path, const char* str_to_find) {
             if (S_ISDIR(st->st_mode)) {
                 // before call the function, check if the name of the folder
                 // contains str_to_find and if it does, call modify_title
-                file_title_modifier(folder_path, item->d_name, str_to_find);
                 prop_modif(full_path, str_to_find);
+                file_title_modifier(folder_path, item->d_name, str_to_find);
             } else {
                 file_title_modifier(folder_path, item->d_name, str_to_find);
             }
