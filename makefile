@@ -27,4 +27,10 @@ sanitizers:
 format:
 	@for file in $(SRC) $(DEPS); do \
 		clang-format -i $$file; \
-	done
+	done \
+
+reset: 
+	rm -rf ./test_folder/*
+	cp -r ./original_folder/* ./test_folder/
+
+.phony: clean format sanitizers reset 

@@ -23,7 +23,7 @@ int main() {
 
     sf_close(sf);
     */
-    prop_modif("./test_folder/");
+    prop_modif("./test_folder/", "@pluggsupply");
 
     return EXIT_SUCCESS;
 }
