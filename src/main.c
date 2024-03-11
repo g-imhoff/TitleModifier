@@ -1,29 +1,32 @@
 #include "../header/base.h"
 #include "../header/prop_modif.h"
 
-int main(int argc, char* argv[]) {
-    if (argc != 3) {
-        printf("Usage: %s <folder_path> <str_to_find>\n", argv[0]);
-        return EXIT_FAILURE;
-    }
+int main() {
+    printf("Enter the name of the folder that you want to scan: ");
+    char file_name[PATH_MAX];
+    scanf("%s", file_name);
 
-    int error_chk = prop_modif(argv[1], argv[2]);
+    printf("Enter the string to delete from the title: ");
+    char str_to_delete[PATH_MAX];
+    scanf("%s", str_to_delete);
+
+    int error_chk = prop_modif(file_name, str_to_delete);
 
     if (DEBUG) {
         if (error_chk == 0) {
-            printf("the function was successful");
+            printf("the function was successful\n");
         } else if (error_chk == 1) {
-            printf("the directory could not be opened");
+            printf("the directory could not be opened\n");
         } else if (error_chk == 2) {
-            printf("the directory could not be read");
+            printf("the directory could not be read\n");
         } else if (error_chk == 3) {
-            printf("memory could not be allocated");
+            printf("memory could not be allocated\n");
         } else if (error_chk == 4) {
-            printf("the full path could not be created");
+            printf("the full path could not be created\n");
         } else if (error_chk == 5) {
-            printf("the file status could not be obtained");
+            printf("the file status could not be obtained\n");
         } else if (error_chk == 6) {
-            printf("the file could not be renamed");
+            printf("the file could not be renamed\n");
         }
     }
 
