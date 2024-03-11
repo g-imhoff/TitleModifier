@@ -3,9 +3,14 @@
 
 // include
 #include "./base.h"
-#include <sndfile.h>
 #include <string.h>
+
+#ifdef __linux__
 #include <linux/limits.h>
+#elif _WIN32
+#include <windows.h> // Inclure les fichiers d'en-tête Windows nécessaires
+#endif
+
 #include <dirent.h>
 #include <sys/types.h>
 #include <sys/stat.h>

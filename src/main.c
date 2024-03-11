@@ -1,8 +1,13 @@
 #include "../header/base.h"
 #include "../header/prop_modif.h"
 
-int main() {
-    prop_modif("./test_folder/", "@pluggsupply");
+int main(int argc, char* argv[]) {
+    if  (argc != 3) {
+        printf("Usage: %s <folder_path> <str_to_find>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    prop_modif(argv[1], argv[2]);
 
     return EXIT_SUCCESS;
 }

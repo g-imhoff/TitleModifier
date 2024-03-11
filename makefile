@@ -31,6 +31,6 @@ format:
 
 reset: 
 	rm -rf ./test_folder/*
-	cp -r ./original_folder/* ./test_folder/
+	unrar x "./original_folder/@pluggsupply PARASIT eternalsounds, vol. 2.rar" ./test_folder/
 
 .phony: clean format sanitizers reset 

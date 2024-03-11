@@ -1,0 +1,3 @@
+/home/ly-dev/Desktop/NoMorePluggSupply/build/CMakeFiles/NoMorePluggSupply.dir
+/home/ly-dev/Desktop/NoMorePluggSupply/build/CMakeFiles/edit_cache.dir
+/home/ly-dev/Desktop/NoMorePluggSupply/build/CMakeFiles/rebuild_cache.dir
