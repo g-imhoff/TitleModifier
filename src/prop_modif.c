@@ -84,6 +84,11 @@ int modify_path(const char* path,
         return 4;
     }
 
+    if (DEBUG) {
+        printf("Old title: %s\n-> ", old_full_path);
+        printf("New title: %s\n", new_full_path);
+    }
+
     // rename the file or folder and check for errors
     int result = rename(old_full_path, new_full_path);
     if (result != 0) {
@@ -120,9 +125,9 @@ int file_title_modifier(const char* path,
     char* new_title = (char*)malloc(strlen(title) + 1);
     int error_modify_title = modify_title(title, str_to_delete, new_title);
     if (error_modify_title != 0) {
-        if (DEBUG) {
-            printf("Error: the string was not found\n");
-        }
+        // if (DEBUG) {
+        //     printf("Error: the string was not found\n");
+        // }
         free(new_title);
         return 1;
     } else {
@@ -200,6 +205,7 @@ int prop_modif(const char* folder_path, const char* str_to_find) {
             if (stat_err < 0) {
                 if (DEBUG) {
                     perror("Error: could not get file status\n");
+                    printf("The file is: %s\n", full_path);
                 }
 
                 return 5;

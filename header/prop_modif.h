@@ -8,7 +8,7 @@
 #ifdef __linux__
 #include <linux/limits.h>
 #elif _WIN32
-#include <windows.h> // Inclure les fichiers d'en-tête Windows nécessaires
+#include <windows.h>  // Inclure les fichiers d'en-tête Windows nécessaires
 #endif
 
 #include <dirent.h>

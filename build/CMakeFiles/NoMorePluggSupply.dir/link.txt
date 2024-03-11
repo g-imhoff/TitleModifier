@@ -1,1 +1,1 @@
-x86_64-w64-mingw32-gcc CMakeFiles/NoMorePluggSupply.dir/src/main.c.o CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o -o NoMorePluggSupply 
+/usr/bin/cc CMakeFiles/NoMorePluggSupply.dir/src/main.c.o CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o -o NoMorePluggSupply 

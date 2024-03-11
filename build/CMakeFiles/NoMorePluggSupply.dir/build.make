@@ -73,29 +73,29 @@ CMakeFiles/NoMorePluggSupply.dir/src/main.c.o: CMakeFiles/NoMorePluggSupply.dir/
 CMakeFiles/NoMorePluggSupply.dir/src/main.c.o: ../src/main.c
 CMakeFiles/NoMorePluggSupply.dir/src/main.c.o: CMakeFiles/NoMorePluggSupply.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ly-dev/Desktop/NoMorePluggSupply/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/NoMorePluggSupply.dir/src/main.c.o"
-	x86_64-w64-mingw32-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NoMorePluggSupply.dir/src/main.c.o -MF CMakeFiles/NoMorePluggSupply.dir/src/main.c.o.d -o CMakeFiles/NoMorePluggSupply.dir/src/main.c.o -c /home/ly-dev/Desktop/NoMorePluggSupply/src/main.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NoMorePluggSupply.dir/src/main.c.o -MF CMakeFiles/NoMorePluggSupply.dir/src/main.c.o.d -o CMakeFiles/NoMorePluggSupply.dir/src/main.c.o -c /home/ly-dev/Desktop/NoMorePluggSupply/src/main.c
 
 CMakeFiles/NoMorePluggSupply.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/NoMorePluggSupply.dir/src/main.c.i"
-	x86_64-w64-mingw32-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ly-dev/Desktop/NoMorePluggSupply/src/main.c > CMakeFiles/NoMorePluggSupply.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ly-dev/Desktop/NoMorePluggSupply/src/main.c > CMakeFiles/NoMorePluggSupply.dir/src/main.c.i
 
 CMakeFiles/NoMorePluggSupply.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NoMorePluggSupply.dir/src/main.c.s"
-	x86_64-w64-mingw32-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ly-dev/Desktop/NoMorePluggSupply/src/main.c -o CMakeFiles/NoMorePluggSupply.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ly-dev/Desktop/NoMorePluggSupply/src/main.c -o CMakeFiles/NoMorePluggSupply.dir/src/main.c.s
 
 CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o: CMakeFiles/NoMorePluggSupply.dir/flags.make
 CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o: ../src/prop_modif.c
 CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o: CMakeFiles/NoMorePluggSupply.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ly-dev/Desktop/NoMorePluggSupply/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o"
-	x86_64-w64-mingw32-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o -MF CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o.d -o CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o -c /home/ly-dev/Desktop/NoMorePluggSupply/src/prop_modif.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o -MF CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o.d -o CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.o -c /home/ly-dev/Desktop/NoMorePluggSupply/src/prop_modif.c
 
 CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.i"
-	x86_64-w64-mingw32-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ly-dev/Desktop/NoMorePluggSupply/src/prop_modif.c > CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ly-dev/Desktop/NoMorePluggSupply/src/prop_modif.c > CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.i
 
 CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.s"
-	x86_64-w64-mingw32-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ly-dev/Desktop/NoMorePluggSupply/src/prop_modif.c -o CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ly-dev/Desktop/NoMorePluggSupply/src/prop_modif.c -o CMakeFiles/NoMorePluggSupply.dir/src/prop_modif.c.s
 
 # Object files for target NoMorePluggSupply
 NoMorePluggSupply_OBJECTS = \

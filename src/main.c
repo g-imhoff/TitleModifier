@@ -2,12 +2,30 @@
 #include "../header/prop_modif.h"
 
 int main(int argc, char* argv[]) {
-    if  (argc != 3) {
+    if (argc != 3) {
         printf("Usage: %s <folder_path> <str_to_find>\n", argv[0]);
         return EXIT_FAILURE;
     }
 
-    prop_modif(argv[1], argv[2]);
+    int error_chk = prop_modif(argv[1], argv[2]);
+
+    if (DEBUG) {
+        if (error_chk == 0) {
+            printf("the function was successful");
+        } else if (error_chk == 1) {
+            printf("the directory could not be opened");
+        } else if (error_chk == 2) {
+            printf("the directory could not be read");
+        } else if (error_chk == 3) {
+            printf("memory could not be allocated");
+        } else if (error_chk == 4) {
+            printf("the full path could not be created");
+        } else if (error_chk == 5) {
+            printf("the file status could not be obtained");
+        } else if (error_chk == 6) {
+            printf("the file could not be renamed");
+        }
+    }
 
     return EXIT_SUCCESS;
 }
