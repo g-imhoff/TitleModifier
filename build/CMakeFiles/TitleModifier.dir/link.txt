@@ -1,0 +1,1 @@
+/usr/bin/gcc CMakeFiles/TitleModifier.dir/src/main.c.o CMakeFiles/TitleModifier.dir/src/prop_modif.c.o -o TitleModifier 

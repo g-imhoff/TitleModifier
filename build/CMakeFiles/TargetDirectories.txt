@@ -1,0 +1,3 @@
+/home/ly-dev/Desktop/TitleModifier/build/CMakeFiles/TitleModifier.dir
+/home/ly-dev/Desktop/TitleModifier/build/CMakeFiles/edit_cache.dir
+/home/ly-dev/Desktop/TitleModifier/build/CMakeFiles/rebuild_cache.dir
