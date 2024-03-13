@@ -1,11 +1,10 @@
 #Les variables
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -pedantic
-EXEC = main
+EXEC = TitleModifier
 SRC = $(wildcard src/*.c)
 OBJ = $(SRC:src/%.c=obj/%.o)
 DEPS = $(wildcard header/*.h)
-*VALGRIND_FLAG = --leak-check=full --show-leak-kinds=all --track-origins=yes 
 
 #Compile le programme en fonction de EXEC, OBJETS, CC, LDFLAGS
 $(EXEC): $(OBJ)
@@ -29,8 +28,4 @@ format:
 		clang-format -i $$file; \
 	done \
 
-reset: 
-	rm -rf ./test_folder/*
-	unrar x "./original_folder/@pluggsupply PARASIT eternalsounds, vol. 2.rar" ./test_folder/
-
-.phony: clean format sanitizers reset 
+.phony: clean format sanitizers 

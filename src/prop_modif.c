@@ -201,6 +201,7 @@ int prop_modif(const char* folder_path, const char* str_to_find) {
                 return 3;
             }
 
+            // if the file status could not be obtained, we will stop the function
             int stat_err = stat(full_path, st);
             if (stat_err < 0) {
                 if (DEBUG) {
@@ -210,6 +211,7 @@ int prop_modif(const char* folder_path, const char* str_to_find) {
 
                 return 5;
             }
+
             char* new_title = (char*)malloc(strlen(item->d_name) + 1);
 
             // if it's a directory, we will call the function recursively, if
